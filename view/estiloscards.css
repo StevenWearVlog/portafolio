@@ -1,0 +1,89 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+     cursor: url('../imagenes/cursor.png'), auto;
+}
+
+.contenedor {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+ }
+.card-izquierda h2{
+     border-bottom: 5px solid #ff4647;
+}
+.card-izquierda {
+    width: 600px;
+    color: #ff4647;
+    padding: 50px;
+    box-sizing: border-box; 
+    background-color: #ffd1f1; 
+    
+    }
+
+.card-izquierda h2 {
+    font-family: "Lalezar", sans-serif;
+    font-size: 100px;
+    margin: 0;
+
+}
+.card-izquierda h2:hover{
+        color: #ffd1f1;
+}
+.card-izquierda p:hover{
+        color: #ffd1f1;
+}
+
+.card-izquierda p {
+    padding-top: 10px;
+    font-family: "League Spartan", sans-serif;
+}
+
+
+.link{
+    color: #ffd1f1;
+    font-family: "League Spartan", sans-serif;
+     text-decoration: none;
+     background-color: #ff4647;
+     padding: 8px;
+     border-radius: 15px;
+}
+
+
+.card-derecha {
+    flex: 1;
+    background-image: url("/imagenes/cardscuadrado.png");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffd1f1;
+    height: 100%;
+}
+
+
+@media (max-width: 800px) {
+    .contenedor {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .card-izquierda {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+        
+    }
+
+    .card-izquierda h2 {
+        font-size: 60px;
+    }
+
+    .card-derecha {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1; 
+        background-size: contain; 
+        background-color: #ffd1f1;
+    }
+}
